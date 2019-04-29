@@ -1,0 +1,270 @@
+.rotate {
+    cursor: pointer;
+    position: fixed;
+    right: 3%;
+    bottom: 3%;
+    margin: -46px 0 0 -46px;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 20;
+}
+
+.rotate:after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 30px #ff00ff, 0 0 10px #ff00ff, 0 0 2px #ff00ff, inset 0 0 2px #ffffff, inset 0 0 4px #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+span.triangle.base {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: 15px 0 0 8px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 23px solid #38fe9b;
+    transform-origin: 50% 50%;
+    z-index: 20;
+}
+
+span.triangle.no1 {
+    position: absolute;
+    margin: 46px 0 0 5px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 23px solid #38fe9b;
+    transform-origin: 0 100%;
+    z-index: 20;
+}
+
+span.triangle.no2 {
+    position: absolute;
+    margin: 45px 0 0 11px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 23px solid #38fe9b;
+    transform-origin: 100% 100%;
+    z-index: 20;
+}
+
+span.triangle.no3 {
+    position: absolute;
+    margin: 96px 0 0 9px;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 23px solid #38fe9b;
+    transform-origin: 50% 100%;
+    z-index: 20;
+}
+
+
+/* Animation */
+
+.rotate {
+    -webkit-animation: rotateTriangle 3s linear infinite;
+    animation: rotateTriangle 3s linear infinite;
+}
+
+@-webkit-keyframes rotateTriangle {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(60deg);
+    }
+}
+
+@keyframes rotateTriangle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(60deg);
+    }
+}
+
+.rotate:after {
+    -webkit-animation: glowAnimation 3s ease infinite;
+    animation: glowAnimation 3s ease infinite;
+}
+
+@-webkit-keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 30px #ffffff, 0 0 10px #ffffff, 0 0 2px #ffffff, inset 0 0 2px #ffffff, inset 0 0 4px #ffffff;
+    }
+    10% {
+        box-shadow: 0 0 80px #ffffff, 0 0 20px #ffffff, 0 0 2px #ffffff, inset 0 0 4px #ffffff, inset 0 0 8px #ffffff;
+    }
+    100% {
+        box-shadow: 0 0 30px #ffffff, 0 0 10px #ffffff, 0 0 2px #ffffff, inset 0 0 2px #ffffff, inset 0 0 4px #ffffff;
+    }
+}
+
+@keyframes glowAnimation {
+    0% {
+        box-shadow: 0 0 30px #38fe9b, 0 0 10px #38fe9b, 0 0 2px #38fe9b, inset 0 0 2px #38fe9b, inset 0 0 4px #38fe9b;
+    }
+    10% {
+        box-shadow: 0 0 80px #38fe9b, 0 0 20px #38fe9b, 0 0 2px #38fe9b, inset 0 0 4px #38fe9b, inset 0 0 8px #38fe9b;
+    }
+    100% {
+        box-shadow: 0 0 30px #38fe9b, 0 0 10px #38fe9b, 0 0 2px #38fe9b, inset 0 0 2px #38fe9b, inset 0 0 4px #38fe9b;
+    }
+}
+
+span.triangle.base {
+    -webkit-animation: scaleTriangleBase 3s linear infinite;
+    animation: scaleTriangleBase 3s linear infinite;
+}
+
+@-webkit-keyframes scaleTriangleBase {
+    from {
+        -webkit-transform: translate(0px, -11px) scale(0.5);
+    }
+    to {
+        -webkit-transform: translate(0px, 0px) scale(1);
+    }
+}
+
+@keyframes scaleTriangleBase {
+    from {
+        transform: translate(0px, -11px) scale(0.5);
+    }
+    to {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+span.triangle.no1 {
+    -webkit-animation: scaleTriangleOne 3s linear infinite;
+    animation: scaleTriangleOne 3s linear infinite;
+}
+
+@-webkit-keyframes scaleTriangleOne {
+    from {
+        -webkit-transform: translate(0px, -46px) scale(0.5);
+    }
+    to {
+        -webkit-transform: translate(-50px, 0px) scale(0);
+    }
+}
+
+@keyframes scaleTriangleOne {
+    from {
+        transform: translate(0px, -46px) scale(0.5);
+    }
+    to {
+        transform: translate(-50px, 0px) scale(0);
+    }
+}
+
+span.triangle.no2 {
+    -webkit-animation: scaleTriangleTwo 3s linear infinite;
+    animation: scaleTriangleTwo 3s linear infinite;
+}
+
+@-webkit-keyframes scaleTriangleTwo {
+    from {
+        -webkit-transform: translate(0px, -46px) scale(0.5);
+    }
+    to {
+        -webkit-transform: translate(20px, 0px) scale(0);
+    }
+}
+
+@keyframes scaleTriangleTwo {
+    from {
+        transform: translate(0px, -46px) scale(0.5);
+    }
+    to {
+        transform: translate(20px, 0px) scale(0);
+    }
+}
+
+span.triangle.no3 {
+    -webkit-animation: scaleTriangleThree 3s linear infinite;
+    animation: scaleTriangleThree 3s linear infinite;
+}
+
+@-webkit-keyframes scaleTriangleThree {
+    from {
+        -webkit-transform: translate(0px, -116px) scale(0.5);
+    }
+    to {
+        -webkit-transform: translate(0px, -130px) scale(0);
+    }
+}
+
+@keyframes scaleTriangleThree {
+    from {
+        transform: translate(0px, -116px) scale(0.5);
+    }
+    to {
+        transform: translate(0px, -130px) scale(0);
+    }
+}
+
+.chat {
+    display: none;
+    border-radius: 5px;
+    width: 250px;
+    height: 320px;
+    background-color: #38fe9b;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    opacity: 0.5;
+}
+
+.chat p {
+    color: #274a27;
+    float: left;
+    margin-left: 7px;
+    display: inline-block;
+}
+
+.chat button {
+    cursor: pointer;
+    color: #274a27;
+    float: right;
+    margin-right: 7px;
+    margin-top: 3px;
+    background-color: transparent;
+    font-weight: bolder;
+    border: none;
+}
+
+.message-container {
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color: #274a27;
+}
+
+.message-input {
+    width: 95%;
+    height: 10%;
+    margin: 3px auto;
+    background-color: #274a27;
+}
+
+.message-input input[type=text] {
+    color: #06ff00;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}

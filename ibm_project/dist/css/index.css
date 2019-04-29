@@ -1,0 +1,645 @@
+/* start of clear fix from browser */
+button {
+	-webkit-appearance: button;
+	overflow: visible
+}
+
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+	-webkit-text-size-adjust: 100%
+}
+
+input {
+	-webkit-border-radius: 0
+}
+
+input[type="button"],
+input[type="submit"] {
+	-webkit-appearance: button
+}
+
+svg:not(:root) {
+	overflow: hidden
+}
+
+[hidden] {
+	display: none
+}
+
+*,
+:before,
+:after {
+	box-sizing: inherit;
+	border-style: solid;
+	border-width: 0
+}
+
+* {
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+	padding: 0
+}
+
+:before,
+:after {
+	text-decoration: inherit;
+	vertical-align: inherit
+}
+
+:root {
+	background-color: #FFF;
+	box-sizing: border-box;
+	color: #666;
+	cursor: default;
+	font: 14px/24px 'Open Sans'
+}
+
+a {
+	color: inherit;
+	text-decoration: none
+}
+
+button,
+[type="button"],
+[type="submit"] {
+	cursor: pointer
+}
+
+button,
+[type="button"],
+[type="password"],
+[type="text"] {
+	min-height: 1.5em
+}
+
+/* end of clear fix from browser */
+
+.a-login {
+	display: table;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%
+}
+
+.a-login-wrapper {
+	display: table-cell;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2
+}
+
+.a-login-wrapper-foto {
+	background: #f2f2f2;
+	border-radius: 50%;
+	overflow: hidden;
+	height: 115px;
+	width: 115px;
+	margin: 0px auto;
+	margin-bottom: 16px;
+	position: relative
+}
+
+.a-login-wrapper-foto:after {
+    background: url(../img/background/espaco.jpg) center no-repeat;
+    filter: grayscale(100%);
+	content: '';
+	position: absolute;
+	width: 115px;
+	height: 115px;
+	top: 0;
+	left: 0
+}
+
+.a-login-foto {
+	width: 115px;
+	margin-top: -10px
+}
+
+.a-login-nome {
+	color: #FFF;
+	font: 20px 'Open Sans';
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+	text-transform: uppercase
+}
+
+.a-login-sobrenome {
+    font: 20px 'Open Sans';
+    font-weight: bold
+}
+
+.a-login-background {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.a-login-background:before {
+    background: url("../img/background/espaco.jpg") bottom center no-repeat;
+    filter: grayscale(100%);
+	bottom: 0;
+	content: '';
+	display: block;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	z-index: 2
+}
+
+.a-login-background:after {
+	-webkit-animation: zoom 10s ease-in forwards;
+	animation: zoom 10s ease-in forwards;
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	content: '';
+	display: block;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1
+}
+
+.a-login-background-1:after {
+	background-image: url("../img/background/cyber-cup.jpg")
+}
+
+.a-login-background-2:after {
+	background-image: url("../img/background/space-cup.jpg")
+}
+
+.a-login-background-3:after {
+	background-image: url("../img/background/robo-combat.jpg")
+}
+
+.a-login-background-4:after {
+	background-image: url("../img/background/coworking-spaces.jpg")
+}
+
+.a-login-background-5:after {
+	background-image: url("../img/background/globo.jpg")
+}
+
+.a-login-background-6:after {
+	background-image: url("../img/background/fluxo.jpg")
+}
+
+.a-login-background-7:after {
+	background-image: url("../img/background/bits.jpg")
+}
+
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2)
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes zoom {
+	from {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2)
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+.a-login-title {
+	color: #FFF;
+	font: 100 30px 'Open Sans';
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+	text-transform: uppercase
+}
+
+.a-login-title-highlight {
+	font-weight: 600
+}
+
+.a-login-error {
+	background: #38fe9b;
+	border-radius: 4px;
+	display: inline-block;
+	color: #FFF;
+	font: 13px/18px 'Open Sans';
+	padding: 6px 10px;
+	text-transform: uppercase
+}
+
+.a-login-error.a-login-autenticado-error {
+	display: block;
+	margin: 0 auto;
+	width: 200px
+}
+
+.a-login-form {
+	background: url("../img/background/formulario.png") top center no-repeat;
+	display: inline-block;
+	max-width: 600px;
+	padding: 50px 0px;
+	width: 90%
+}
+
+.a-login-label {
+	color: #DDD;
+	display: block;
+    font: 12px/50px 'Open Sans';
+    font-weight: 300;
+	letter-spacing: 1px;
+	text-transform: uppercase
+}
+
+.a-login-input {
+	background: rgba(255, 255, 255, 0.6);
+	border: none;
+	color: #000;
+	display: block;
+	font: 15px/45px 'Open Sans';
+	letter-spacing: 2px;
+	outline: none;
+	padding: 0 15px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%
+}
+
+.a-login-input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0px 1000px #FFF inset
+}
+
+.a-login-columns {
+	display: table;
+	margin: auto;
+	max-width: 320px;
+	width: 100%
+}
+
+.a-login-column {
+	display: table-cell;
+	padding: 5px;
+	vertical-align: middle;
+	width: 50%
+}
+
+.a-login-footer {
+	margin: auto;
+	max-width: 320px;
+	padding: 5px;
+	width: 100%
+}
+
+.a-login-btn {
+	background: #38fe9b;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+    font: 14px 'Open Sans';
+    font-weight: bold;
+	height: 50px;
+	letter-spacing: 1px;
+	outline: none;
+	text-transform: uppercase;
+	-webkit-transition: background .4s, color .4s;
+	transition: background .4s, color .4s;
+	width: 100%
+}
+
+.a-login-btn:hover {
+	background: #000;
+	color: #fff
+}
+
+.a-login-link {
+	color: #DDD;
+	display: block;
+    font: 12px 'Open Sans';
+    font-weight: 300;
+	letter-spacing: 1px;
+	margin-top: 25px;
+	text-transform: uppercase;
+	-webkit-transition: color .4s;
+	transition: color .4s
+}
+
+.a-login-link:hover {
+	color: #000
+}
+
+.a-login-link:after {
+	background: #FFF;
+	content: '';
+	display: block;
+	height: 1px;
+	margin: 25px auto 0;
+	width: 85px
+}
+
+.a-login-copyright {
+	bottom: 34px;
+	color: rgba(255, 255, 255, 0.5);
+    font: 10px 'Open Sans';
+    font-weight: 300;
+	left: 50px;
+	letter-spacing: 1px;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 2
+}
+
+.a-login-caption {
+	bottom: 34px;
+	color: #FFF;
+    font: 10px 'Open Sans';
+    font-weight: 300;
+	letter-spacing: 1px;
+	position: absolute;
+	right: 50px;
+	text-transform: uppercase;
+	z-index: 2
+}
+
+.a-login-caption-highlight {
+	font-family: 'Open Sans'
+
+font-weight: bold;}
+
+@media (max-width: 800px) {
+	.a-login-caption {
+		display: none
+	}
+	.a-login-copyright {
+		left: 0;
+		text-align: center;
+		width: 100%
+	}
+}
+
+.a-senha {
+	display: table;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%
+}
+
+.a-senha-wrapper {
+	display: table-cell;
+	position: relative;
+	text-align: center;
+	vertical-align: middle;
+	z-index: 2
+}
+
+.a-senha-background {
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0
+}
+
+.a-senha-background:before {
+	background: url("../img/background/portal-do-aluno.png") bottom center no-repeat;
+	bottom: 0;
+	content: '';
+	display: block;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	z-index: 2
+}
+
+.a-senha-background:after {
+	-webkit-animation: zoom 10s ease-in forwards;
+	animation: zoom 10s ease-in forwards;
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	content: '';
+	display: block;
+	left: 0;
+	right: 0;
+	position: absolute;
+	top: 0;
+	z-index: 1
+}
+
+.a-senha-background-1:after {
+	background-image: url("../img/background/cyber-cup.jpg")
+}
+
+.a-senha-background-2:after {
+	background-image: url("../img/background/space-cup.jpg")
+}
+
+.a-senha-background-3:after {
+	background-image: url("../img/background/robo-combat.jpg")
+}
+
+.a-senha-background-4:after {
+	background-image: url("../img/background/coworking-spaces.jpg")
+}
+
+.a-senha-background-5:after {
+	background-image: url("../img/background/globo.jpg")
+}
+
+.a-senha-background-6:after {
+	background-image: url("../img/background/fluxo.jpg")
+}
+
+.a-senha-background-7:after {
+	background-image: url("../img/background/bits.jpg")
+}
+
+@keyframes zoom {
+	from {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2)
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+.a-senha-title {
+	color: #FFF;
+	font: 100 30px 'Open Sans';
+	letter-spacing: 2px;
+	margin-bottom: 25px;
+	text-transform: uppercase
+}
+
+.a-senha-title-highlight {
+	font-weight: 600
+}
+
+.a-senha-error {
+	background: #38fe9b;
+	border-radius: 4px;
+	display: inline-block;
+	color: #FFF;
+	font: 13px/18px 'Gotham HTF Medium';
+	margin-bottom: 25px;
+	max-width: 450px;
+	padding: 6px 10px;
+	text-transform: uppercase;
+	opacity: 0
+}
+
+.a-senha-form {
+	background: url("../img/background/formulario.png") top center no-repeat;
+	display: inline-block;
+	max-width: 600px;
+	padding: 50px 0px;
+	width: 90%
+}
+
+.a-senha-form .field-validation-error {
+	color: #38fe9b;
+	display: block;
+	font-size: 12px;
+	line-height: 22px;
+	text-align: left;
+	width: 100%
+}
+
+.a-senha-label {
+	color: #DDD;
+	display: block;
+    font: 12px 'Open Sans';
+    font-weight: 300;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	text-align: left;
+	text-transform: uppercase
+}
+
+.a-senha-input {
+	background: rgba(255, 255, 255, 0.6);
+	border: none;
+	color: #000;
+	display: block;
+	font: 15px/45px 'Open Sans';
+	letter-spacing: 2px;
+	outline: none;
+	padding: 0 15px;
+	text-align: left;
+	text-transform: uppercase;
+	width: 100%
+}
+
+.a-senha-btn {
+	background: #38fe9b;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	display: block;
+    font: 14px 'Open Sans';
+    font-weight: bold;
+	height: 50px;
+	letter-spacing: 1px;
+	outline: none;
+	text-transform: uppercase;
+	-webkit-transition: background .4s, color .4s, opacity .4s;
+	transition: background .4s, color .4s, opacity .4s;
+	width: 100%
+}
+
+.a-senha-btn:hover {
+	background: #000;
+	color: #fff
+}
+
+.a-senha-btn[disabled] {
+	opacity: 0.4
+}
+
+.a-senha-row {
+	margin: 10px auto;
+	max-width: 320px;
+	width: 100%
+}
+
+.a-senha-row.is-hidden {
+	display: none
+}
+
+.a-senha-copyright {
+	bottom: 34px;
+	color: rgba(255, 255, 255, 0.5);
+    font: 10px 'Open Sans';
+    font-weight: 300;
+	left: 50px;
+	letter-spacing: 1px;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 2
+}
+
+.a-senha-caption {
+	bottom: 34px;
+	color: #FFF;
+    font: 10px 'Open Sans';
+    font-weight: 300;
+	letter-spacing: 1px;
+	position: absolute;
+	right: 50px;
+	text-transform: uppercase;
+	z-index: 2
+}
+
+.a-senha-caption-highlight {
+	font-family: 'Open Sans'
+
+font-weight: bold;}
+
+@media (max-width: 800px) {
+	.a-senha-caption {
+		display: none
+	}
+	.a-senha-copyright {
+		left: 0;
+		text-align: center;
+		width: 100%
+	}
+}
+@-webkit-keyframes zoom {
+	from {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2)
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
+
+@keyframes zoom {
+	from {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2)
+	}
+	to {
+		-webkit-transform: scale(1);
+		transform: scale(1)
+	}
+}
